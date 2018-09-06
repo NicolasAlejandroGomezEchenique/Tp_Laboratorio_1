@@ -1,0 +1,1 @@
+Tuve un pequeño incoveniente al factorear numeros grandes porque me falta aprender a usar mejor el "long long"
