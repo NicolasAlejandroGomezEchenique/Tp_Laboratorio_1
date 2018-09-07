@@ -4,7 +4,7 @@
 que van a ser llamadas desde el main.c.-
 */
 //Funcion para ingresar opciones.-
-int askOption (void)
+int askOpcion (void)
 {
     int opcion;
     printf("\n Ingrese una opcion \n");
@@ -15,7 +15,7 @@ int askOption (void)
 
 //Funcion para pedir numeros.-
 
-void askNumber (int* numero)
+void askNumero (int* numero)
 {
     printf("\n Ingrese un numero: \n");
     scanf("%d", numero);
@@ -24,49 +24,49 @@ void askNumber (int* numero)
 
 
 //Funcion de suma
-int sumar(int operadorA, int operadorB)
+int sumar(int fuenteUno, int fuenteDos)
 {
 
     int resultadoSuma;
-    resultadoSuma= operadorA+operadorB;
+    resultadoSuma= fuenteUno+fuenteDos;
 
     return resultadoSuma;
 }
 //Funcion de resta
-int restar(int operadorA, int operadorB)
+int restar(int fuenteUno, int fuenteDos)
 {
 
     int resultadoResta;
-    resultadoResta=  operadorA-operadorB;
+    resultadoResta=  fuenteUno-fuenteDos;
 
     return resultadoResta;
 }
 //Funcion de multiplicacion
-int multiplicar(int operadorA, int operadorB)
+int multiplicar(int fuenteUno, int fuenteDos)
 {
 
     int resultadoMultiplicacion;
-    resultadoMultiplicacion= operadorA*operadorB;
+    resultadoMultiplicacion= fuenteUno*fuenteDos;
 
     return resultadoMultiplicacion;
 }
 //funcion de division
-float dividir(int operadorA, int operadorB)
+float dividir(int fuenteUno, int fuenteDos)
 {
 
     float resultadoDivision;
-    resultadoDivision= (float)operadorA/operadorB;
+    resultadoDivision= (float)fuenteUno/fuenteDos;
 
     return (float)resultadoDivision;
 }
 //funcion de factorial
-long long int factorialMainA(int operadorA)
+long long int factoreoUno(int fuenteUno)
 {
 
     long long int resultadoFactorial=1;
     int i;
 
-    for (i=operadorA; i>=1; i-- )
+    for (i=fuenteUno; i>=1; i-- )
     {
 
         resultadoFactorial=resultadoFactorial*i;
@@ -76,20 +76,20 @@ long long int factorialMainA(int operadorA)
 
 }
 
-long long int factorialMainB(int operadorB)
+long long int factoreoDos(int fuenteDos)
 
 {
 
-    long long int resultadoFactorialOperadorB=1;
+    long long int resultadoFactorialfuenteDos=1;
     int i;
 
-    for (i=operadorB; i>=1; i-- )
+    for (i=fuenteDos; i>=1; i-- )
     {
 
-        resultadoFactorialOperadorB=resultadoFactorialOperadorB*i;
+        resultadoFactorialfuenteDos=resultadoFactorialfuenteDos*i;
     }
 
-    return resultadoFactorialOperadorB;
+    return resultadoFactorialfuenteDos;
 
     }
 
